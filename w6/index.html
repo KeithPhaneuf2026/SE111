@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Keith Phaneuf">
+    <meta name="description" content="Week 6 | Javascript Pay Calculator">
+    <title>Week 6 | Javascript Pay Calculator</title>
+</head>
+<body>
+
+    <h1>Javascript Pay Calculator</h1>
+
+    <script>
+        
+        //needs to be modified for rounding
+        var hourlyWage = prompt(`Please enter your hourly rate: `)
+        console.log(`passed the prompt()`)
+        var hoursWorked = prompt(`Please enter your hours worked: `)
+        console.log(`passed the prompt()`)
+        var grossPay = hourlyWage * hoursWorked
+        console.log(`passed the prompt()`)
+        console.log(`Gross Pay: $${grossPay}`)
+        var tax = grossPay * 0.20
+        console.log(`Uncle Sam's Share: $${tax}`)
+        var netPay = grossPay - tax
+        console.log(`Net Pay: $${netPay}`)
+
+
+    </script>
+    
+</body>
+</html>
