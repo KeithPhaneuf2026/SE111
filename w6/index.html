@@ -15,18 +15,15 @@
 
     <script>
         
-        //needs to be modified for rounding
         var hourlyWage = prompt(`Please enter your hourly rate: `)
-        console.log(`passed the prompt()`)
         var hoursWorked = prompt(`Please enter your hours worked: `)
-        console.log(`passed the prompt()`)
         var grossPay = hourlyWage * hoursWorked
-        console.log(`passed the prompt()`)
-        console.log(`Gross Pay: $${grossPay}`)
+        console.log(`Gross Pay: $${grossPay.toFixed(2)}`)
         var tax = grossPay * 0.20
-        console.log(`Uncle Sam's Share: $${tax}`)
+        console.log(`Uncle Sam's Share: $${tax.toFixed(2)}`)
         var netPay = grossPay - tax
-        console.log(`Net Pay: $${netPay}`)
+        alert(`Gross Pay: $${grossPay.toFixed(2)} | Uncle Sam's Share: $${tax.toFixed(2)} | Net Pay: $${netPay.toFixed(2)}`)
+        console.log(`Net Pay: $${netPay.toFixed(2)}`)
 
 
     </script>
