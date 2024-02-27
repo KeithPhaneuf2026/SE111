@@ -114,16 +114,34 @@
             console.log() all of these elements once complete
 
         */
+        var h1 = document.querySelector(`h1`)
+        console.log(h1)
         var body = document.querySelector(`body`)
-
         console.log(body)
+        var fName = document.querySelector(`#first`)
+        console.log(fName)
+        var lName = document.querySelector(`#last`)
+        console.log(lName)
+        var rate = document.querySelector(`#rate`)
+        console.log(rate)
+        var hours = document.querySelector(`#hours`)
+        console.log(hours)
+        var enterButton = document.querySelector(`#enter-button`)
+        console.log(enterButton)
+        var infoLog = document.querySelector(`#info`)
+        console.log(infoLog)
+        var confirmButton = document.querySelector(`#confirm-button`)
+        console.log(confirmButton)
+
+
         //PART2------adding event listeners------------------------
         /*
             add an event listener to the #enter-button that runs a function called "formData"
 
             add an event listener to the #confirm-button that runs a function called "confirmForm"
         */
-
+        document.querySelector(`#enter-button`).addEventListener(`click`, formEnter)
+        document.querySelector(`#confirm-button`).addEventListener(`click`, formEnter)
 
         //PART3------building event functions----------------------
         /*
