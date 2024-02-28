@@ -172,14 +172,14 @@
             //LOCAL SCOPE: name is only recognizable INSIDE of the function in which it is declared; the main way to access values that are locally scoped is through function returns :[ (passing by value)
 
             //testing local vars --> show #first's value
-            var fvalue = first.value //local declaration
-            console.log(`#first value: ${fvalue}`)
+            var fValue = first.value //local declaration
+            console.log(`#first value: ${fValue}`)
 
             var lvalue = last.value
             var avalue = Number(age.value)
 
             //create a full name using fvalue and lvalue
-            var full = fvalue + ` ` + lvalue
+            var full = fValue + ` ` + lvalue
 
             //write the full name to the #info element by adding it to its innerHTML
             info.innerHTML += `<p><b>Name:</b>${full}</p>`
@@ -213,7 +213,7 @@
 
         //testing local vars --> show #first's value
         
-        console.log(`#first value: ${fvalue}`)
+        console.log(`#first value: ${fValue}`)
 
         document.querySelector(`#me`).addEventListener(`click`, clickMe)
         var count = 0
